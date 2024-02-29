@@ -1,0 +1,8 @@
+
+.DS_Store
+
+# Local Netlify folder
+.netlify
+node_modules
+package-lock.json
+docs/kitchen/emoji-en-US.js

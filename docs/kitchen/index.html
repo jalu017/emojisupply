@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="allEmojis">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Kitchen Browser</title>
+  <link rel="stylesheet" href="/kitchen/style.css">
+  <meta property="og:site_name" content="Emoji Kitchen Browser" />
+  <meta id="md-title" property="og:title" content="Emoji Kitchen Browser" />
+  <meta id="md-desc" property="og:description" content="Explore Emoji Kitchen combinations" />
+  <link rel="apple-touch-icon" href="/kitchen/icon.png">
+  <meta name="apple-mobile-web-app-title" content="Emoji Kitchen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" id="favicon" href="/favicon.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z353MGES3V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z353MGES3V');
+
+    const updateAppHeight = () => {
+      const doc = document.documentElement
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+    }
+    window.addEventListener('resize', updateAppHeight)
+    updateAppHeight()
+  </script>
+</head>
+<body>
+<div id="menu">
+  <div id="copy" class="menu-item" onclick="copy()">Copy URL</div>
+  <div id="share" class="menu-item" onclick="share()">Share</div>
+  <div id="share" class="menu-item" onclick="window.open('https://tinyurl.com/g-board')">Get Gboard</div>
+  <div class="menu-item" onclick="about()">About</div>
+</div>
+<div id="about">
+  <div class="icon closeIcon" onclick="document.documentElement.classList.remove('showAbout')"></div>
+  <p>
+  This page lets you browse the delightful combinations of
+  <a target="_blank" href="https://tinyurl.com/emojikitchen">Emoji Kitchen</a>,
+  available in <a target="_blank" href="https://tinyurl.com/g-board">Gboard</a> for Android.
+</p>
+<p>
+  All credit goes to the Emoji Kitchen team for the care they put into emoji, standards, and imaginary creatures.
+</p>
+<p>Source code: on <a target="_blank" href="https://github.com/alcor/emoji-supply">GitHub</a>, by <a target="_blank" href="https://twitter.com/alcor">@alcor</a></p> 
+
+
+</div>
+<div id="emoji-container" class="container">
+  <div class="search-container"><input id="search" type="search" placeholder=""></div>
+</div>
+<div id="mixmoji-container" class="container"></div>
+<div id="preview-container">
+  <div class="preview"><img draggable="true" id="p1" src=""></div>
+  <svg id="plus" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#fff" d="M9.625 25.637h12.637v12.636c0 .938.781 1.739 1.738 1.739s1.758-.801 1.758-1.739V25.637h12.617c.938 0 1.738-.782 1.738-1.739 0-.957-.8-1.757-1.738-1.757H25.758V9.523c0-.937-.801-1.738-1.758-1.738s-1.738.8-1.738 1.738v12.618H9.625c-.938 0-1.738.8-1.738 1.757 0 .957.8 1.739 1.738 1.739Z"/></svg>
+  <div class="preview"><img draggable="true" id="p2" src=""></div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path fill="#fff" d="M12.145 19.504h23.71c.938 0 1.739-.8 1.739-1.758 0-.957-.801-1.738-1.739-1.738h-23.71c-.938 0-1.739.781-1.739 1.738s.801 1.758 1.739 1.758Zm0 12.344h23.71c.938 0 1.739-.782 1.739-1.739 0-.957-.801-1.757-1.739-1.757h-23.71c-.938 0-1.739.8-1.739 1.757 0 .957.801 1.739 1.739 1.739Z"/></svg>
+  <div class="preview"><img draggable="true" id="pc" src=""></div>
+  <div class="icon menuIcon" onclick="document.documentElement.classList.toggle('showMenu')"></div>
+</div>
+
+<script  src="https://git.emoji.supply/kitchen/emojidata.js"></script>
+<script  src="/kitchen/script.js"></script>
+</body>
+</html>

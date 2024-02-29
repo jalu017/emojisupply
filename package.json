@@ -1,0 +1,33 @@
+{
+  "name": "emojisupply",
+  "version": "1.0.0",
+  "description": "emojisupply",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "emojisupply"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalu017/emojisupply.git"
+  },
+  "keywords": [
+    "emojisupply"
+  ],
+  "author": "jalu017",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalu017/emojisupply/issues"
+  },
+  "homepage": "https://github.com/jalu017/emojisupply#readme",
+  "dependencies": {
+    "lunarx-template002": "^1.0.0",
+    "tehkotak": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.57.0"
+  }
+}
