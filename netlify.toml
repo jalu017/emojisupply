@@ -8,6 +8,6 @@
   status = 301
 
 [[redirects]]
-  from = "/emojikitchen/*"
-  to = "https://www.gstatic.com/android/keyboard/emojikitchen/:splat"
+  from = "/emojisupply/*"
+  to = "https://www.gstatic.com/android/keyboard/emojisupply/:splat"
   status = 200
